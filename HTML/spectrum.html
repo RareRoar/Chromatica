@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Get started</a> |
+                <a href="inspiration.html">Inspiration</a> |
+                <a href="spectrum.html">Spectrum</a>
+            </nav>
+            <h1>Chromatica</h1>
+            <img src="img/header.jpg" alt="Header image"/>
+        </header>
+        <main>
+            <section>
+                <table>
+                    <tr>
+                        <td>Red</td>
+                        <td><span>#ffcdd2</span></td>
+                        <td><span>#e57373</span></td>
+                        <td><span>#f44336</span></td>
+                        <td><span>#d32f2f</span></td>
+                        <td><span>#b71c1c</span></td>
+                    </tr>
+                    <tr>
+                        <td>Orange</td>
+                        <td><span>#ffe0b2</span></td>
+                        <td><span>#ffb74d</span></td>
+                        <td><span>#ff9800</span></td>
+                        <td><span>#f57c00</span></td>
+                        <td><span>#e65100</span></td>
+                    </tr>
+                    <tr>
+                        <td>Yellow</td>
+                        <td><span>#fff9c4</span></td>
+                        <td><span>#fff176</span></td>
+                        <td><span>#ffeb3b</span></td>
+                        <td><span>#fbc02d</span></td>
+                        <td><span>#f57f17</span></td>
+                    </tr>
+                    <tr>
+                        <td>Green</td>
+                        <td><span>#c8e6c9</span></td>
+                        <td><span>#81c784</span></td>
+                        <td><span>#4caf50</span></td>
+                        <td><span>#388e3c</span></td>
+                        <td><span>#1b5e20</span></td>
+                    </tr>
+                    <tr>
+                        <td>Cyan</td>
+                        <td><span>#b2ebf2</span></td>
+                        <td><span>#4dd0e1</span></td>
+                        <td><span>#00bcd4</span></td>
+                        <td><span>#0097a7</span></td>
+                        <td><span>#006064</span></td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td><span>#c5cae9</span></td>
+                        <td><span>#7986cb</span></td>
+                        <td><span>#3f51b5</span></td>
+                        <td><span>#303f9f</span></td>
+                        <td><span>#1a237e</span></td>
+                    </tr>
+                    <tr>
+                        <td>Purple</td>
+                        <td><span>#e1bee7</span></td>
+                        <td><span>#ba68c8</span></td>
+                        <td><span>#9c27b0</span></td>
+                        <td><span>#7b1fa2</span></td>
+                        <td><span>#4a148c</span></td>
+                    </tr>
+                    <tr>
+                        <td>Black</td>
+                        <td><span>#f5f5f5</span></td>
+                        <td><span>#e0e0e0</span></td>
+                        <td><span>#9e9e9e</span></td>
+                        <td><span>#616161</span></td>
+                        <td><span>#212121</span></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><span>#6a1b9a</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>#9c4dcc</span></td>
+                        <td><span>#38006b</span></td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <form>
+                    <fieldset>
+                        <details>
+                            <summary>
+                                <label for="hex-input">Hex</label>
+                                <input id="hex-input" type="text" placeholder="#ffffff" value="#6a1b9a"/>
+                            </summary>
+                            <dl>
+                                <dt>Alpha-red-green-blue</dt>
+                                <dd>                                    
+                                    <label for="argb-input">Argb</label>
+                                    <input id="argb-input" type="text" placeholder="(255, 255, 255, 255)" value="(255, 106, 27, 154)"/>
+                                </dd>
+                                <dt>Cyan-magenta-yellow-key</dt>
+                                <dd>                                    
+                                    <label for="cmyk-input">Cmyk</label>
+                                    <input id="cmyk-input" type="text" placeholder="(0%, 0%, 0%, 0%)" value="(31%, 82%, 0%, 40%)"/> 
+                                </dd>
+                            </dl>
+                        </details>
+                        <button type="submit">add color to palette</button>
+                    </fieldset>
+                </form>
+                <article>
+                    <form>
+                        <select id="palette-list">
+                            <optgroup label="Your palettes">
+                                    <option value="lavender">Lavender</option>
+                            </optgroup>
+                            <optgroup label="New palette">
+                                <option value="new">--new--</option>
+                            </optgroup>
+                        </select>
+                        <input type="text" placeholder="..." value="Lavender"/>
+                        <button type="submit">save</button>
+                    </form>
+                    <table>
+                        <tr>
+                            <td><span>#6a1b9a</span></td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <address>by <a href="http://github.com/RareRoar">Denis Andreyuk</a></address>
+                <time datetime="2021">6th semester</time>
+        </footer>
+    </body>
+</html>
