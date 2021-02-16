@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/style.css"/>
         <meta charset="utf-8"/>
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Get started</a> |
-                <a href="inspiration.html">Inspiration</a> |
-                <a href="spectrum.html">Spectrum</a>
-                
-                <a href="auth.html">Join Chromatica</a>
+            <nav class="navbar">
+                <a class="nav-item-left" href="index.html">Get started</a>
+                <a class="nav-item-left" href="inspiration.html">Inspiration</a>
+                <a class="nav-item-left" href="spectrum.html">Spectrum</a>
+                <a class="nav-item-right" href="auth.html">Join Chromatica</a>
+            
             </nav>
-            <h1>Chromatica</h1>
-            <img src="img/header.jpg" alt="Header image" width="1200" height="600"/>
+            <figure class="image-container">
+                <img class="header-image" src="img/header.jpg" alt="Header image"/>
+                <h1 class="text-centered header-text">Chromatica</h1>
+            </figure>
         </header>
         <main>
             <section>
@@ -61,8 +64,9 @@
             </section>
         </main>
         <footer>
-            <address>by <a href="http://github.com/RareRoar">Denis Andreyuk</a></span>
-            <time datetime="2021">6th semester</time>
+            <address class="copyright-label">by <a href="http://github.com/RareRoar">Denis Andreyuk</a>
+                <time datetime="2021">6th semester</time>
+            </address>
         </footer>
     </body>
 </html>
