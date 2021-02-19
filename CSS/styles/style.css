@@ -142,3 +142,72 @@ address a:hover {
     text-decoration: underline;
     text-decoration-color: lavender;
 }
+
+.presentation-container {
+    padding: 10vh 2vw 10vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.presentation-figure {
+    width: 50%;
+}
+
+.presentation-figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hr-shadow {
+    display: none;
+	margin: 0;
+	padding: 0;
+    height: 0;
+	border: none;
+	box-shadow: 0 0 10px 1px black;
+}
+
+.presentation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.presentation-list li:nth-child(1n) {
+    background-color: #fdd83580;
+}
+
+.presentation-list li:nth-child(2n) {
+    background-color: #c1282880;
+}
+
+.presentation-list li:nth-child(3n) {
+    background-color: #311b9280;
+}
+
+.presentation-article {
+    width: 50%;
+    padding: 3vh 7vw 3vh;
+}
+
+.presentation-article h2 {
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.presentation-article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+mark {
+    background-color: blueviolet;
+    color: cornsilk;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: oblique;
+}
