@@ -18,6 +18,10 @@ body {
     margin: auto;
 }
 
+header {
+    width: 100%;
+}
+
 .header-image {
     margin: 0;
     width: 100%;
@@ -28,7 +32,7 @@ body {
 }
 
 .header-text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 60px;
     color: whitesmoke;
 }
@@ -45,7 +49,7 @@ body {
 }
 
 .auth-title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Garamond, serif;
     color: whitesmoke;
     font-size: 20px;
     margin: 1vh auto 2vh;
@@ -83,7 +87,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -96,7 +100,7 @@ body {
 .nav-item-left {
     margin: 2vh 2vw 2vh;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     color: whitesmoke;
     text-decoration: none;
 }
@@ -109,7 +113,7 @@ body {
 .nav-item-right {
     margin: 2vh 2vw 2vh auto;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     color: whitesmoke;
     text-decoration: none;
 }
@@ -129,7 +133,7 @@ footer {
     text-align: center;
     color: whitesmoke;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Garamond, serif;
     font-style: normal;
 }
 
@@ -175,15 +179,15 @@ address a:hover {
 }
 
 .presentation-list li:nth-child(1n) {
-    background-color: #fdd83580;
+    background-color:#311b9230;
 }
 
 .presentation-list li:nth-child(2n) {
-    background-color: #c1282880;
+    background-color:#fdd83530;
 }
 
 .presentation-list li:nth-child(3n) {
-    background-color: #311b9280;
+    background-color:#c1282830;
 }
 
 .presentation-article {
@@ -192,14 +196,18 @@ address a:hover {
 }
 
 .presentation-article h2 {
-    font-style: oblique;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-style: bold;
+    font-family: Garamond, serif;
+    font-size: 6rem;
+    margin: auto;
+    color: #835b9e;
 }
 
 .presentation-article p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    color: #49285c;
+    margin: auto;
 }
 
 mark {
@@ -207,7 +215,146 @@ mark {
     color: cornsilk;
     border: 1px solid black;
     padding: 2px;
-    margin: 5px;
     font-size: 20px;
     font-style: oblique;
+}
+
+aside {
+    background: #6a1b9a;
+    width: 15%;
+    margin-right: 7vw;
+    padding: 2vh 2vw 2vh;
+    float: right;
+    font-family: Garamond, serif;
+    color: #c7adf5;
+    font-size: 1.3rem;
+}
+
+.inspiration-set{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 64vh;
+    width: 50%;
+    padding: 1vh 0 5vh;
+}
+
+.inspiration-main-figure {
+    width: 80%;
+    height: 100%;
+}
+
+.inspiration-main-figure img{
+    width: 100%;
+}
+
+.inspiration-aux-figure {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+}
+
+.inspiration-aux-figure img{
+    width: 100%;
+}
+
+.tag-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    font-family: Garamond, serif;
+    height: 15vh;
+}
+
+.tag-list li {
+    color: #7900B2;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-background {
+    background-color: #8217ce20;
+    overflow: auto;
+    font-size: 0;
+}
+
+.search-fieldset {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border: none;
+    font-size: 2rem;
+    margin: 5vh auto 2vh;
+    height: 20vh;
+    padding: 2vh 2vw 0vh;
+}
+
+.search-fieldset legend {
+    color: #7900B2;
+}
+.search-fieldset input[type=text] {
+    width: 80%;
+    background: #dfa5ff;
+    border: none;
+    padding: 1vh 3vw 1vh;
+    font-size: 1.3rem;
+    font-family: Garamond, serif;
+    font-style: oblique;
+    color: #7900B2;
+}
+
+.search-fieldset input[type=text]:focus {
+    outline: none;
+    background: #f1f1f1;
+    font-style: normal;
+    color: #180024;
+}
+
+.search-fieldset button {
+    width: 20%;
+    background: #7900B2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-fieldset button img {
+    width: 50%;
+    height: auto;
+}
+
+.search-fieldset button:hover {
+    background: #530179;
+}
+
+.search-fieldset button:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hr-shelf {
+	margin: 0;
+	padding: 0;
+	height: 9vh;
+	border: none;
+	border-bottom: 1px solid #50015a;
+	box-shadow: 0 20px 20px -20px #333;
+	width: 100%;
+}
+
+.aux-background {
+    background-color: #7500c820;
 }
