@@ -1,4 +1,4 @@
-### Chromatica
+# Chromatica
 by Denis Andreyuk, 853501
 
 ## Lab №2 (HTML)
