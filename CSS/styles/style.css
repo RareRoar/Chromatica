@@ -4,10 +4,11 @@ body {
 }
 
 .image-container {
-    margin: 100px 0 0 0;
+    margin: 15vh 0 0 0;
     position: relative;
     text-align: center;
     color: white;
+    height: 50vh;
 }
 
 .text-centered {
@@ -25,7 +26,7 @@ header {
 .header-image {
     margin: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     object-fit: none;
     filter: brightness(50%);
     display: block;
@@ -322,12 +323,15 @@ aside {
     color: #180024;
 }
 
-.search-fieldset button {
-    width: 20%;
+button {
     background: #7900B2;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.search-fieldset button {
+    width: 20%;
 }
 
 .search-fieldset button img {
@@ -357,4 +361,227 @@ aside {
 
 .aux-background {
     background-color: #7500c820;
+}
+/*
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td {
+    border: 0.1rem solid rgb(151, 151, 151);
+}
+
+table tr {
+    border-bottom: 0.1rem solid rgb(151, 151, 151);
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+*/
+table {
+    border: none;
+}
+
+.spectrum-palette {
+    background-color: white;
+    width: 100%;
+    padding: 0 15vw 0 10vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 53vh;
+}
+
+.spectrum-table {
+    display: block;
+    overflow-y: scroll;
+    padding: 1vh 1vw 1vh 1vw;
+    height: 100%;
+    font-size: 1rem;
+    font-family: Garamond, sans-serif;
+}
+
+.choise-table {
+    display: block;
+    padding: 1vh 1vw 1vh 1vw;
+    height: 100%;
+    background-color: white;
+    font-size: 1rem;
+    font-family: Garamond, sans-serif;
+}
+
+.spectrum-table td {
+    padding: 0;
+}
+
+.spectrum-table th {
+    text-align: right;
+    padding-right: 1vw;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.spectrum-table div {
+    width: 6vw;
+    height: 6vw;
+}
+
+.tutorial {
+    height: 26vh;
+}
+
+.user-palette {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 15vw 0 10vw;
+    box-sizing: border-box;
+    font-family: Garamond, sans-serif;
+    height: 32vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-palette select {
+    font-family: Garamond, sans-serif;
+}
+
+.user-palette input {
+    font-family: Garamond, sans-serif;
+}
+
+.user-palette button {
+    font-family: Garamond, sans-serif;
+}
+
+.user-palette fieldset {
+    border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.choise-table th {
+    padding: 0;
+}
+
+.choise-table td {
+    padding: 0;
+    width: 50%;
+}
+
+.choise-table th > div {
+    margin: 0;
+    height: 30vh;
+    width: 12vw;
+}
+
+.choise-table td > div {
+    height: 23vh;
+    width: 100%;
+}
+
+summary {
+    display: block;
+  }
+  
+    summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::before {
+    content: '+';
+    padding-right: 0.5em;
+  }
+  
+  details[open] > summary::before {
+    content: '-';
+  }
+
+.color-choise {
+    width: 23vw;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+.color-choise summary input {
+    
+    font-size: 1.5rem;
+    width: 80%;
+    height: 20%;
+}
+
+.color-choise button {
+    display: block;
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 2.7vh auto 1vh;
+    height: 30%;
+}
+
+.palette-choise {
+    width: 50%;
+}
+
+.palette-choise fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.palette-choise select {
+    
+    font-size: 1.5rem;
+    width: 35%;
+    height: 20%;
+}
+
+.palette-choise input {
+    
+    font-size: 1.5rem;
+    width: 40%;
+    height: 20%;
+}
+
+.palette-choise button {
+    width: 15%;
+    height: 30%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.edit-palette {
+    height: 35vh;
 }

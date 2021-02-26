@@ -1,101 +1,132 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/style.css"/>
         <meta charset="utf-8"/>
         <title>Spectrum</title>
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Get started</a> |
-                <a href="inspiration.html">Inspiration</a> |
-                <a href="spectrum.html">Spectrum</a>
-                <a href="palette.html">My palettes</a>
+            <nav class="navbar">
+                    <a class="nav-item-left" href="index.html">Get started</a>
+                    <a class="nav-item-left" href="inspiration.html">Inspiration</a>
+                    <a class="nav-item-left" href="spectrum.html">Spectrum</a>
+                    <a class="nav-item-left" href="palette.html">My palettes</a>
+                    <a class="nav-item-right" href="auth.html">Join Chromatica</a>
+                
             </nav>
-            <h1>Chromatica</h1>
-            <img src="img/header.jpg" alt="Header image"/>
+            <figure class="image-container">
+                <img class="header-image" src="img/header.jpg" alt="Header image"/>
+                <h1 class="text-centered header-text">Chromatica</h1>
+            </figure>
         </header>
-        <main>
-            <section>
-                <table>
+        <main class="aux-background">
+            <section class="tutorial main-background">
+                
+            </section>
+            <hr class="hr-shelf main-background">
+            <section class="spectrum-palette">
+                <table class="spectrum-table">
                     <tr>
-                        <td>Red</td>
-                        <td><span>#ffcdd2</span></td>
-                        <td><span>#e57373</span></td>
-                        <td><span>#f44336</span></td>
-                        <td><span>#d32f2f</span></td>
-                        <td><span>#b71c1c</span></td>
+                        <th>Red</th>
+                        <td><div style="background-color: #ffcdd2;">#ffcdd2</div></td>
+                        <td><div style="background-color: #e57373;">#e57373</div></td>
+                        <td><div style="background-color: #f44336;">#f44336</div></td>
+                        <td><div style="background-color: #d32f2f;">#d32f2f</div></td>
+                        <td><div style="background-color: #b71c1c;">#b71c1c</div></td>
                     </tr>
                     <tr>
-                        <td>Orange</td>
-                        <td><span>#ffe0b2</span></td>
-                        <td><span>#ffb74d</span></td>
-                        <td><span>#ff9800</span></td>
-                        <td><span>#f57c00</span></td>
-                        <td><span>#e65100</span></td>
+                        <th>Orange</th>
+                        <td><div style="background-color: #ffe0b2;">#ffe0b2</div></td>
+                        <td><div style="background-color: #ffb74d;">#ffb74d</div></td>
+                        <td><div style="background-color: #ff9800;">#ff9800</div></td>
+                        <td><div style="background-color: #f57c00;">#f57c00</div></td>
+                        <td><div style="background-color: #e65100;">#e65100</div></td>
                     </tr>
                     <tr>
-                        <td>Yellow</td>
-                        <td><span>#fff9c4</span></td>
-                        <td><span>#fff176</span></td>
-                        <td><span>#ffeb3b</span></td>
-                        <td><span>#fbc02d</span></td>
-                        <td><span>#f57f17</span></td>
+                        <th>Yellow</th>
+                        <td><div style="background-color: #fff9c4;">#fff9c4</div></td>
+                        <td><div style="background-color: #fff176;">#fff176</div></td>
+                        <td><div style="background-color: #ffeb3b;">#ffeb3b</div></td>
+                        <td><div style="background-color: #fbc02d;">#fbc02d</div></td>
+                        <td><div style="background-color: #f57f17;">#f57f17</div></td>
                     </tr>
                     <tr>
-                        <td>Green</td>
-                        <td><span>#c8e6c9</span></td>
-                        <td><span>#81c784</span></td>
-                        <td><span>#4caf50</span></td>
-                        <td><span>#388e3c</span></td>
-                        <td><span>#1b5e20</span></td>
+                        <th>Green</th>
+                        <td><div style="background-color: #c8e6c9;">#c8e6c9</div></td>
+                        <td><div style="background-color: #81c784;">#81c784</div></td>
+                        <td><div style="background-color: #4caf50;">#4caf50</div></td>
+                        <td><div style="background-color: #388e3c;">#388e3c</div></td>
+                        <td><div style="background-color: #1b5e20;">#1b5e20</div></td>
                     </tr>
                     <tr>
-                        <td>Cyan</td>
-                        <td><span>#b2ebf2</span></td>
-                        <td><span>#4dd0e1</span></td>
-                        <td><span>#00bcd4</span></td>
-                        <td><span>#0097a7</span></td>
-                        <td><span>#006064</span></td>
+                        <th>Cyan</th>
+                        <td><div style="background-color: #b2ebf2;">#b2ebf2</div></td>
+                        <td><div style="background-color: #4dd0e1;">#4dd0e1</div></td>
+                        <td><div style="background-color: #00bcd4;">#00bcd4</div></td>
+                        <td><div style="background-color: #0097a7;">#0097a7</div></td>
+                        <td><div style="background-color: #006064;">#006064</div></td>
                     </tr>
                     <tr>
-                        <td>Blue</td>
-                        <td><span>#c5cae9</span></td>
-                        <td><span>#7986cb</span></td>
-                        <td><span>#3f51b5</span></td>
-                        <td><span>#303f9f</span></td>
-                        <td><span>#1a237e</span></td>
+                        <th>Blue</th>
+                        <td><div style="background-color: #c5cae9;">#c5cae9</div></td>
+                        <td><div style="background-color: #7986cb;">#7986cb</div></td>
+                        <td><div style="background-color: #3f51b5;">#3f51b5</div></td>
+                        <td><div style="background-color: #303f9f;">#303f9f</div></td>
+                        <td><div style="background-color: #1a237e;">#1a237e</div></td>
                     </tr>
                     <tr>
-                        <td>Purple</td>
-                        <td><span>#e1bee7</span></td>
-                        <td><span>#ba68c8</span></td>
-                        <td><span>#9c27b0</span></td>
-                        <td><span>#7b1fa2</span></td>
-                        <td><span>#4a148c</span></td>
+                        <th>Purple</th>
+                        <td><div style="background-color: #e1bee7;">#e1bee7</div></td>
+                        <td><div style="background-color: #ba68c8;">#ba68c8</div></td>
+                        <td><div style="background-color: #9c27b0;">#9c27b0</div></td>
+                        <td><div style="background-color: #7b1fa2;">#7b1fa2</div></td>
+                        <td><div style="background-color: #4a148c;">#4a148c</div></td>
                     </tr>
                     <tr>
-                        <td>Black</td>
-                        <td><span>#f5f5f5</span></td>
-                        <td><span>#e0e0e0</span></td>
-                        <td><span>#9e9e9e</span></td>
-                        <td><span>#616161</span></td>
-                        <td><span>#212121</span></td>
+                        <th>Black</th>
+                        <td><div style="background-color: #f5f5f5;">#f5f5f5</div></td>
+                        <td><div style="background-color: #e0e0e0;">#e0e0e0</div></td>
+                        <td><div style="background-color: #9e9e9e;">#9e9e9e</div></td>
+                        <td><div style="background-color: #616161;">#616161</div></td>    
+                        <td><div style="background-color: #212121;">#212121</div></td>
                     </tr>
                 </table>
-                <table>
+                <table class="choise-table">
                     <tr>
-                        <td><span>#6a1b9a</span></td>
+                        <th colspan="2"><div style="background-color: #6a1b9a;">#6a1b9a</div></th>
                     </tr>
                     <tr>
-                        <td><span>#9c4dcc</span></td>
-                        <td><span>#38006b</span></td>
+                        <td><div style="background-color: #9c4dcc;">#9c4dcc</div></td>
+                        <td><div style="background-color: #38006b;">#38006b</div></td>
                     </tr>
                 </table>
             </section>
-            <section>
+            <section class="user-palette">
+                
+                <article class="palette-choise">
+                    <form>
+                        <fieldset>
+                            <select id="palette-list">
+                                <optgroup label="Your palettes">
+                                        <option value="lavender">Lavender</option>
+                                </optgroup>
+                                <optgroup label="New palette">
+                                    <option value="new">--new--</option>
+                                </optgroup>
+                            </select>
+                            <input type="text" placeholder="..." value="Lavender"/>
+                            <button type="submit">save</button>
+                        </fieldset>
+                    </form>
+                    <table>
+                        <tr>
+                            <td><div>#6a1b9a</div></td>
+                        </tr>
+                    </table>
+                </article>
                 <form>
-                    <fieldset>
+                    <fieldset class="color-choise">
                         <details>
                             <summary>
                                 <label for="hex-input">Hex</label>
@@ -117,25 +148,6 @@
                         <button type="submit">add color to palette</button>
                     </fieldset>
                 </form>
-                <article>
-                    <form>
-                        <select id="palette-list">
-                            <optgroup label="Your palettes">
-                                    <option value="lavender">Lavender</option>
-                            </optgroup>
-                            <optgroup label="New palette">
-                                <option value="new">--new--</option>
-                            </optgroup>
-                        </select>
-                        <input type="text" placeholder="..." value="Lavender"/>
-                        <button type="submit">save</button>
-                    </form>
-                    <table>
-                        <tr>
-                            <td><span>#6a1b9a</span></td>
-                        </tr>
-                    </table>
-                </article>
             </section>
         </main>
         <footer>
