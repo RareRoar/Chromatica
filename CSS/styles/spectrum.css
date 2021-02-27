@@ -49,7 +49,26 @@
 }
 
 .tutorial {
+    box-sizing: border-box;
     height: 35vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%;
+}
+
+.tutorial ol {
+    margin: auto;
+    padding-top: 12vh;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Garamond, sans-serif;
+    color: #835b9e;
+    align-items: center;
+    justify-content: space-between;
+
+
+.tutorial li {
+    margin: 0;
 }
 
 .user-palette {
