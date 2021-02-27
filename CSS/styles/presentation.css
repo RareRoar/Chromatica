@@ -1,0 +1,95 @@
+
+.presentation-container {
+    box-sizing: border-box;
+    height: 85vh;
+    padding: 10vh 2vw 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.presentation-figure {
+    box-sizing: border-box;
+    width: 42vw;
+    display: block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin: 0;
+}
+
+
+.presentation-article {
+    box-sizing: border-box;
+    width: 48vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    /*padding: 3vh 7vw 3vh 2vw;*/
+}
+
+.presentation-figure img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.presentation-figure figcaption {
+    font-size: 1.6rem;
+    font-family: Garamond, sans-serif;
+    text-align: center;
+    padding-top: 3vh;
+    color: #49285c;
+}
+
+.hr-shadow {
+    display: none;
+	margin: 0;
+	padding: 0;
+    height: 0;
+	border: none;
+	box-shadow: 0 0 10px 1px black;
+}
+
+.presentation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.presentation-list li:nth-child(1n) {
+    background-color:#311b9230;
+}
+
+.presentation-list li:nth-child(2n) {
+    background-color:#fdd83530;
+}
+
+.presentation-list li:nth-child(3n) {
+    background-color:#c1282830;
+}
+
+
+.presentation-article h2 {
+    font-style: bold;
+    font-family: Garamond, serif;
+    font-size: 6rem;
+    margin: auto;
+    padding-bottom: 2vh;
+    color: #835b9e;
+}
+
+.presentation-article p {
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    color: #49285c;
+    margin: auto;
+}
+
+mark {  
+    color: #49285c;
+    background-color: #00000000;
+    font-style: oblique;
+}

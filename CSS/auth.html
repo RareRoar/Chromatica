@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/hull.css"/>
+        <link rel="stylesheet" href="styles/auth.css"/>
         <meta charset="utf-8"/>
         <title>Authentication</title>
     </head>
@@ -20,34 +21,56 @@
                 <h1 class="text-centered header-text">Chromatica</h1>
             </figure>
         </header>
-        <main class="auth-panel main-container">
+        <main class="auth-panel main-background row-container">
             
             <section class="auth-container">
                 <h2 class="auth-title">Sing in</h2>
                 <form>
                     <fieldset class="auth-form">
+                        <div class="row-container">
                         <label for="sign-in-login">Login</label>
                         <input id="sign-in-login" type="text"/>
+                    </div>
+                    <div class="row-container">
                         <label for="sign-in-password">Password</label>
                         <input id="sign-in-password" type="text"/>
+                    </div>
+                        <div class="row-container">
                         <label for="sign-in-remember">Remember me</label>
                         <input class="auth-checkbox" id="sign-in-remember" type="checkbox"/>
+                        
+                    </div>
+                    
+                    <div class="row-container">
                         <button type="submit">submit</button>
+                        
+                    </div>
                     </fieldset>
                 </form>
             </section>
             <div class="text-divider">OR</div>
             <section class="auth-container">
-                <h2>Sing up</h2>
+                <h2 class="auth-title">Sing up</h2>
                 <form>
                     <fieldset class="auth-form">
+                        <div class="row-container">
                         <label for="sign-up-login">Login</label>
                         <input id="sign-up-login" type="text"/>
+                        
+                    </div>
+                        <div class="row-container">
                         <label for="sign-up-password">Password</label>
                         <input id="sign-up-password" type="text"/>
+                        
+                    </div>
+                        <div class="row-container">
                         <label for="sign-up-confirm">Confirm password</label>
                         <input id="sign-up-confirm" type="text"/>
+                        
+                    </div>
+                    <div class="row-container">
                         <button type="submit">submit</button>
+                    </div>
                     </fieldset>
                 </form>
             </section>

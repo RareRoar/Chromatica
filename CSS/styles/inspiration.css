@@ -1,0 +1,128 @@
+
+aside {
+    background: #6a1b9a;
+    width: 15%;
+    margin-right: 7vw;
+    padding: 2vh 2vw 2vh;
+    float: right;
+    font-family: Garamond, serif;
+    color: #c7adf5;
+    font-size: 1.3rem;
+}
+
+.inspiration-set{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 64vh;
+    width: 50%;
+    padding: 1vh 0 5vh;
+}
+
+.inspiration-main-figure {
+    width: 80%;
+    height: 100%;
+}
+
+.inspiration-main-figure img{
+    width: 100%;
+}
+
+.inspiration-aux-figure {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+}
+
+.inspiration-aux-figure img{
+    width: 100%;
+}
+
+.tag-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    font-family: Garamond, serif;
+    height: 15vh;
+}
+
+.tag-list li {
+    color: #7900B2;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.search-fieldset {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border: none;
+    font-size: 2rem;
+    margin: 5vh auto 2vh;
+    height: 20vh;
+    padding: 2vh 2vw 0vh;
+}
+
+.search-fieldset legend {
+    color: #7900B2;
+}
+.search-fieldset input[type=text] {
+    width: 80%;
+    background: #dfa5ff;
+    border: none;
+    padding: 1vh 3vw 1vh;
+    font-size: 1.3rem;
+    font-family: Garamond, serif;
+    font-style: oblique;
+    color: #7900B2;
+}
+
+.search-fieldset input[type=text]:focus {
+    outline: none;
+    background: #f1f1f1;
+    font-style: normal;
+    color: #180024;
+}
+
+.search-fieldset button {
+    width: 20%;
+}
+
+.search-fieldset button img {
+    width: 50%;
+    height: auto;
+}
+
+.search-fieldset button:hover {
+    background: #530179;
+}
+
+.search-fieldset button:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+iframe {
+    border: none;
+    box-sizing: border-box;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: block;
+    height: 85vh;
+    width: 62vw;
+    margin: auto;
+}

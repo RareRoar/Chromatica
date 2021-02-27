@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles/style.css"/> 
+        <link rel="stylesheet" href="styles/hull.css"/>
+        <link rel="stylesheet" href="styles/palette.css"/>
+        <link rel="stylesheet" href="styles/spectrum.css"/>
         <meta charset="utf-8"/>
         <title>Palette</title>
     </head>
@@ -20,35 +22,77 @@
                 <h1 class="text-centered header-text">Chromatica</h1>
             </figure>
         </header>
-        <main class="main-background edit-palette">
-            <section>
-                <form>
-                    <input type="text" placeholder="Palette title" value="Lavender"/>
-                </form>
-                <table>
-                    <tr>
-                        <td><div>#6a1b9a</div></td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td><div>#6a1b9a</div></td>
-                    </tr>
-                    <tr>
-                        <td><div>#9c4dcc</div></td>
-                        <td><div>#38006b</div></td>
-                    </tr>
-                </table>
+        <main class="blank-background">
+            <section class="tutorial main-background">
+                
             </section>
-            <section>
+            
+            <div class="shelf-vectical">
+            <div class=" column-container edit-palette">
+                    <form>
+                        <fieldset class="row-container">
+                        <input type="text" placeholder="Palette title" value="Lavender"/>
+                        
+                        <select id="palette-list">
+                            <optgroup label="Your palettes">
+                                    <option value="lavender">Lavender</option>
+                            </optgroup>
+                            <optgroup label="New palette">
+                                <option value="new">--new--</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    </form>
+            <div class="row-container palette-container">
+                    <table class="imm-palette">
+                        <tr>
+                            <td><div style="background-color: #6a1b9a;"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                            <td><div class="empty-filler"></div></td>
+                        </tr>
+                    </table>
+                <section class="column-container">
+                    <table class="choise-table-large">
+                        <tr>
+                            <th colspan="2"><div style="background-color: #6a1b9a;"></div></th>
+                        </tr>
+                        <tr>
+                            <td><div style="background-color: #9c4dcc;"></div></td>
+                            <td><div style="background-color: #38006b;"></div></td>
+                        </tr>
+                    </table>
+                </section>
+                
+            </div>
+            
+            <section class="button-box row-container">
                 <button type="submit">change palette title</button>
                 <button type="submit">remove color from the palette</button>
                 <button type="submit">save the palette</button>
             </section>
+            </div>
+            </div>
         </main>
         <footer>
-            <address>by <a href="http://github.com/RareRoar">Denis Andreyuk</a></address>
+            <address class="copyright-label">by <a href="http://github.com/RareRoar">Denis Andreyuk</a>
             <time datetime="2021">6th semester</time>
+        </address>
         </footer>
     </body>
 </html>
