@@ -10,6 +10,8 @@ aside {
     font-size: 1.3rem;
 }
 
+
+
 .inspiration-set{
     display: flex;
     flex-direction: row;
@@ -39,10 +41,6 @@ aside {
 
 .inspiration-aux-figure {
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
     height: 100%;
 }
 
@@ -106,10 +104,13 @@ aside {
 }
 
 .search-fieldset legend {
+    font-size: 2vw;
     color: #7900B2;
 }
 .search-fieldset input {
+    box-sizing: border-box;
     width: 80%;
+    height: 100%;
     background: #dfa5ff;
     border: none;
     padding: 1vh 3vw 1vh;
@@ -134,10 +135,13 @@ aside {
 }
 
 .search-fieldset button {
+    height: 100%;
     width: 20%;    
 }
 
 .search-fieldset button img {
+    height: 75%;
+    width: 75%;
     margin: auto;
     transition-duration: 1.6s;
     transition-property: transform;
@@ -179,4 +183,55 @@ iframe:hover {
     padding-top: 4vh;
     padding-bottom: 4vh;
     width: 62vw;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .inspiration-aux-figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 767px) {
+    .inspiration-grid {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .inspiration-main-figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    .aux-figure-grid {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    aside {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+
+@media (max-width: 767px) {
+    .search-fieldset legend {
+        font-size: 4vw;
+        color: #7900B2;
+    }
 }

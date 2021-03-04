@@ -98,7 +98,7 @@
 .presentation-article h2 {
     font-style: bold;
     font-family: Garamond, serif;
-    font-size: 6rem;
+    font-size: 6vw;
     margin: auto;
     padding-bottom: 2vh;
     color: #835b9e;
@@ -106,7 +106,7 @@
 
 .presentation-article p {
     font-family: Garamond, serif;
-    font-size: 2rem;
+    font-size: 2vw  ;
     color: #49285c;
     margin: auto;
 }
@@ -115,4 +115,41 @@ mark {
     color: #49285c;
     background-color: #00000000;
     font-style: oblique;
+}
+
+@media (min-width: 768px) {
+}
+
+
+@media (max-width: 767px) {
+    .presentation-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 32.5vh;
+    }
+
+    .presentation-figure {
+        width: 100%;
+        height: 32.5vh;
+    }
+    .presentation-figure figcaption {
+        display: none;
+    }
+
+    .presentation-figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation-article {
+        width: 100%;
+        height: 32.5vh;
+    }
+    .presentation-article h2 {
+        text-align: center;
+        font-size: 9.5vw;
+    }
+    .presentation-article p {
+        font-size: 3.5vw;
+    }
 }

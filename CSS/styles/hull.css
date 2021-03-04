@@ -24,6 +24,7 @@ header {
 }
 
 .header-image {
+    z-index: 0;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -272,4 +273,19 @@ form select {
 form select:focus {
     outline: none;
     animation: darkout 1s forwards;
+}
+
+@media (min-width: 768px) {
+}
+
+
+@media (max-width: 767px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li:nth-child(even) {
+        padding-left: 14vw;
+        font-style: italic;
+    }
 }

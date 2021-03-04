@@ -62,3 +62,13 @@ main.row-container {
 .auth-container input:focus {
     border: 0.1rem solid #555;
 }
+
+img {
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .auth-panel button {
+        width: 50%;
+    }
+}
