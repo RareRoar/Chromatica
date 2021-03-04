@@ -34,8 +34,12 @@ header {
 
 .header-text {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 60px;
+    font-size: 6rem;
     color: whitesmoke;
+
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .navbar {
@@ -75,7 +79,12 @@ header {
 
 .nav-item-left:hover {
     text-decoration:underline;
-    text-decoration-color: lavender;
+    text-decoration-color: #4e4051;
+    
+    animation-name: darken;
+    animation-duration: 1s;
+    
+    animation-fill-mode: forwards;
 }
 
 .nav-item-right {
@@ -87,7 +96,13 @@ header {
 }
 .nav-item-right:hover {
     text-decoration:underline;
-    text-decoration-color: lavender;
+    text-decoration-color: #4e4051;
+    
+    animation-name: darken;
+    animation-duration: 1s;
+    
+    animation-fill-mode: forwards;
+    
 }
 
 footer {
@@ -121,6 +136,12 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background: #530179;
 }
 
 .hr-shelf {
@@ -202,4 +223,53 @@ table {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@keyframes darken {
+    from {
+        color: whitesmoke;
+    }
+    to {
+        color: #4e4051;
+    }
+}
+
+@keyframes darkout {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #7500c820;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form input {
+    border: none;
+    border-bottom: 0.1rem solid #4e4051;
+    color: #835b9e;
+}
+
+form input:focus {
+    outline: none;
+    animation: darkout 1s forwards;
+}
+
+form select {
+    border: none;
+    border-bottom: 0.1rem solid #4e4051;
+    color: #835b9e;
+}
+
+form select:focus {
+    outline: none;
+    animation: darkout 1s forwards;
 }

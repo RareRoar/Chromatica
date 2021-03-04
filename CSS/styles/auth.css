@@ -60,5 +60,5 @@ main.row-container {
 } 
 
 .auth-container input:focus {
-    border: 3px solid #555;
+    border: 0.1rem solid #555;
 }

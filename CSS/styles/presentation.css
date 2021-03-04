@@ -11,6 +11,7 @@
 }
 
 .presentation-figure {
+    transition: opacity 0.5s linear;
     box-sizing: border-box;
     width: 42vw;
     display: block;
@@ -34,6 +35,27 @@
     width: 100%;
     height: 50vh;
     object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.presentation-figure img:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    animation-name: sature;
+}
+
+@keyframes sature {
+    from {
+        filter: grayscale(100%);
+    }
+    to {
+        filter: grayscale(0%);
+    }
+}
+
+
+.presentation-figure img:hover {
+    filter: grayscale(100%);
 }
 
 .presentation-figure figcaption {
@@ -42,6 +64,7 @@
     text-align: center;
     padding-top: 3vh;
     color: #49285c;
+    
 }
 
 .hr-shadow {

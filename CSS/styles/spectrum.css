@@ -44,8 +44,31 @@
 }
 
 .spectrum-table div {
+    box-sizing: border-box;
     width: 5vw;
     height: 5vw;
+    border-color: white;
+}
+
+.spectrum-table div:hover {
+    animation-name: borderize;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes borderize {
+    from {
+        border: none;
+        
+        border-color: white;
+    }
+    to {
+        border-style: solid;
+        border-color: white;
+        border-width: 0.3rem;
+        border-radius: 0.8rem;
+    }
 }
 
 .tutorial {
