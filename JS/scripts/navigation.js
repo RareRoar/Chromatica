@@ -1,6 +1,6 @@
 async function loadSlide(slideName) {
     const response = await fetch(`../JS/slides/${slideName}.html`);
-    document.getElementsById('slide-block').remove();
+    
     let slideBlock = document.createElement('div');
     slideBlock.id = 'slide-block';
     slideBlock.innerHTML = await response.text();
@@ -11,5 +11,9 @@ async function loadSlide(slideName) {
 //loadSlide(links[i].dataset.slideName)
 let links = document.getElementsByClassName('nav-item-left');
 for(let i=0; i<links.length; i++){
-    links[i].onclick = function() { loadSlide(links[i].dataset.slideName);} ;
+    links[i].onclick = function() { 
+        let oldSlideBlock = document.getElementsById('slide-block');
+        oldSlideBlock.parentNode.removeChild(oldSlideBlock);
+        loadSlide(links[i].dataset.slideName);
+    } ;
 }
