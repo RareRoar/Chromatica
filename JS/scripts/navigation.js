@@ -12,7 +12,7 @@ async function loadSlide(slideName) {
 let links = document.getElementsByClassName('nav-item-left');
 for(let i=0; i<links.length; i++){
     links[i].onclick = function() { 
-        let oldSlideBlock = document.getElementsById('slide-block');
+        let oldSlideBlock = document.getElementById('slide-block');
         oldSlideBlock.parentNode.removeChild(oldSlideBlock);
         loadSlide(links[i].dataset.slideName);
     } ;
