@@ -13,7 +13,9 @@ let links = document.getElementsByClassName('nav-item-left');
 for(let i=0; i<links.length; i++){
     links[i].onclick = function() { 
         let oldSlideBlock = document.getElementById('slide-block');
-        oldSlideBlock.parentNode.removeChild(oldSlideBlock);
+        if (oldSlideBlock != null) {
+            oldSlideBlock.parentNode.removeChild(oldSlideBlock);
+        }
         loadSlide(links[i].dataset.slideName);
     } ;
 }
