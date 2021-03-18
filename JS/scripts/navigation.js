@@ -1,6 +1,8 @@
 async function loadSlide(slideName) {
     const response = await fetch(`../JS/slides/${slideName}.html`);
+    document.getElementsById('slide-block').remove();
     let slideBlock = document.createElement('div');
+    slideBlock.id = 'slide-block';
     slideBlock.innerHTML = await response.text();
     console.log(slideBlock.innerHTML)
     document.body.insertBefore(slideBlock, document.getElementsByTagName('footer')[0]);
