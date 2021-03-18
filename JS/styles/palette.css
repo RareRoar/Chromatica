@@ -1,0 +1,147 @@
+
+.edit-palette {
+    box-sizing: border-box;
+    padding: 4vh 0 4vh;
+    height: 85vh;
+    width: auto;
+    margin-left: 15vw;
+    margin-right: 14vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-family: Garamond, sans-serif;
+    color: #49285c;
+}
+
+.edit-palette input {
+    color: #49285c;
+    font-size: 2rem;
+    font-family: Garamond, sans-serif;
+}
+
+
+.edit-palette select {
+    color: #49285c;
+    font-size: 2rem;
+    font-family: Garamond, sans-serif;
+}
+
+.edit-palette form {
+    width: 100%;
+}
+
+.edit-palette fieldset {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0;
+    height: 11vh;
+}
+
+.palette-container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.edit-palette select {
+    width: 45%;
+}
+
+
+.edit-palette input {
+    width: 45%
+}
+
+
+.button-box {
+    height: 33vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-box button {
+    height: 7vh;
+    font-size: 2.3vw;
+    font-family: Garamond, sans-serif;
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+}
+
+
+.empty-filler {
+    height: 5vw;
+    width: 5vw;
+    background-image: url(../img/transparent.jpg);
+}
+
+.imm-palette {
+    display: block;
+    overflow: auto;
+    height: 45vh;
+    margin: 0;
+    padding: 0;   
+}
+
+
+.imm-palette td {
+    padding: 0;   
+}
+
+.imm-palette div {
+    box-sizing: border-box;
+    height: 15vh;
+    width: 15vh;   
+    
+}
+
+.imm-palette div:hover {
+    animation-name: borderize;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards; 
+    
+}
+
+.edit-palette article {
+    width: 38vw;
+}
+
+.choise-table-large {
+    height: 45vh;
+    width: 30vh;
+}
+.choise-table-large td {
+    width: 50%;
+    padding: 0;
+}
+.choise-table-large td > div {
+    height: 15vh;
+    width: 100%;
+}
+.choise-table-large th > div {
+    margin: 0;
+    height: 30vh;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    
+    .edit-palette {
+        width: 90%;
+        margin: auto;
+    }
+
+    .palette-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+
+    .button-box button {
+        width: 31%;
+        font-size: 2.5vw;
+    }
+
+}
