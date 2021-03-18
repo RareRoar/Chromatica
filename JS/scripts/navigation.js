@@ -9,5 +9,5 @@ async function loadSlide(slideName) {
 //loadSlide(links[i].dataset.slideName)
 let links = document.getElementsByClassName('nav-item-left');
 for(let i=0; i<links.length; i++){
-    links[i].onclick = loadSlide('inspiration');
+    links[i].onclick = function() { loadSlide(links[i].dataset.slideName);} ;
 }
