@@ -93,8 +93,9 @@ class Navigator {
     }
 
     configureOnPopHandler() {
+        let that = this;
         window.onpopstate = function (event) {
-            if (event.state) { state = event.state; }
+            if (event.state) { that.state = event.state; }
             this.render();
         };
     }
