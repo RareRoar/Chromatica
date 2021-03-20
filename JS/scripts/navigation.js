@@ -113,7 +113,7 @@ class Navigator {
         }
         let slideBlock = document.createElement('div');
         slideBlock.id = 'slide-block';
-        if (currentSlide != undefined) {
+        if (this.state.currentSlide != undefined) {
             slideBlock.innerHTML = currentSlide.html;
             document.body.insertBefore(slideBlock, document.getElementsByTagName('footer')[0]);
         }
