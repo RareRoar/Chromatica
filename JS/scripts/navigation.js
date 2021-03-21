@@ -1,6 +1,6 @@
 import {SlideManager} from './slideManager.js';
 import {Navigator} from './navigator.js';
-import { DbEmulator, registerButtonHandler } from './dbEmulator.js';
+import { DbEmulator, registerButtonHandler, authButtonHandler } from './dbEmulator.js';
 
 const navigator = new Navigator();
 const slideManager = new SlideManager();
