@@ -13,7 +13,6 @@ for(let i = 0; i < links.length; i++){
 }
 
 let link = document.getElementsByClassName('nav-item-right')[0];
-let db = new DbEmulator();
 link.onclick = function() {
     navigator.pushSlide(slideManager.slides[slideManager.slides.length - 1]);
     document.getElementById('register-button').onclick = () => registerButtonHandler();
