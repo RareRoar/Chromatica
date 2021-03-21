@@ -76,6 +76,7 @@ export function registerButtonHandler(db) {
     if (signUpPassword.value === signUpConfirm.value) {
         db.registerUser(signUpLogin.value, signUpPassword.value);
     }
+    console.log(db.tree);
 }
 
 export function authButtonHandler(db) {
@@ -85,5 +86,6 @@ export function authButtonHandler(db) {
     if (db.authenticateUser(signInLogin.value, signInPassword.value)) {
             document.getElementById('join-link').innerHTML = signInLogin;
     }
+    console.log(db.tree);
 }
 
