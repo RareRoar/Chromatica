@@ -69,7 +69,7 @@ export class DbEmulator {
     }
 }
 
-export function registerButtonHandler(db) {
+export function registerButtonHandler() {
     const signUpLogin = document.getElementById('sign-up-login');
     const signUpPassword = document.getElementById('sign-up-password');
     const signUpConfirm = document.getElementById('sign-up-confirm');
@@ -79,7 +79,7 @@ export function registerButtonHandler(db) {
     console.log(db.tree);
 }
 
-export function authButtonHandler(db) {
+export function authButtonHandler() {
     const signInLogin = document.getElementById('sign-in-login');
     const signInPassword = document.getElementById('sign-in-password');
     const signInConfirm = document.getElementById('sign-in-confirm');
