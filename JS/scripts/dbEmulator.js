@@ -7,6 +7,7 @@ export class DbEmulator {
             this.tree = {
                 currentUser: null,
             };
+            localStorage.setItem(this.appName, JSON.stringify(this.tree));
             this.currentUser = null;
         }
         else {
