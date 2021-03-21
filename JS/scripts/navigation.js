@@ -17,5 +17,5 @@ let db = new DbEmulator();
 link.onclick = function() {
     navigator.pushSlide(slideManager.slides[slideManager.slides.length - 1]);
     document.getElementById('register-button').onclick = () => registerButtonHandler();
-    document.getElementById('auth-button').onclick = ()) => authButtonHandler();
+    document.getElementById('auth-button').onclick = () => authButtonHandler();
 };
