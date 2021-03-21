@@ -86,9 +86,9 @@ export function registerButtonHandler() {
     const signUpLogin = document.getElementById('sign-up-login');
     const signUpPassword = document.getElementById('sign-up-password');
     const signUpConfirm = document.getElementById('sign-up-confirm');
+    let db = new DbEmulator();
     if (signUpPassword.value === signUpConfirm.value) {
         
-        let db = new DbEmulator();
         db.registerUser(signUpLogin.value, signUpPassword.value);
     }
     console.log(db.tree);
