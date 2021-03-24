@@ -38,6 +38,7 @@ export class DbEmulator {
                 passwordHash: password.hashCode(),
                 palettes: null,
             };
+            this.save();
         }
         else {
             throw new Error(`User \'${userName}\' already exists!`);
@@ -57,6 +58,10 @@ export class DbEmulator {
             console.log(e);
             alert('Unexpected error!');
         }
+    }
+
+    save() {
+        localStorage.setItem(this.appName, JSON.stringify(this.tree));
     }
 
     savePalette(palette) {
