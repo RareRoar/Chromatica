@@ -29,7 +29,6 @@ link.onclick = function() {
     document.getElementById('auth-button').onclick = () => {
         const signInLogin = document.getElementById('sign-in-login');
     const signInPassword = document.getElementById('sign-in-password');
-    const signInConfirm = document.getElementById('sign-in-confirm');
     if (db.authenticateUser(signInLogin.value, signInPassword.value)) {
         
             document.getElementById('join-link').innerHTML = signInLogin;

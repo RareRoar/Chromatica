@@ -46,6 +46,7 @@ export class DbEmulator {
     }
 
     authenticateUser(userName, password) {
+        console.log(this.tree);
         try {
             if (this.tree[userName].passwordHash === password.hashCode()) {
                 return true;
@@ -86,7 +87,7 @@ export class DbEmulator {
         );
     }
 }
-
+/*
 export function registerButtonHandler() {
     const signUpLogin = document.getElementById('sign-up-login');
     const signUpPassword = document.getElementById('sign-up-password');
@@ -111,3 +112,4 @@ export function authButtonHandler() {
     console.log(db.tree);
 }
 
+*/
