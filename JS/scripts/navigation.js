@@ -30,8 +30,7 @@ for(let i = 0; i < links.length; i++){
         if (links[i].dataset.slideName === 'spectrum') {
 
             function LightenDarkenColor(col, amt) {
-                let shift = 0;
-                var num = parseInt(col, 16);
+                let num = parseInt(col, 16);
                 let r, g, b = 0;
                 r = (num >> 16);
                 g = ((num >> 8) & 0x00FF);
@@ -46,7 +45,7 @@ for(let i = 0; i < links.length; i++){
                     g += g / amt;
                     b += b / amt;
                 }
-                var newColor = b | (g << 8) | (r << 16);
+                let newColor = b | (g << 8) | (r << 16);
                 return newColor.toString(16).padStart(6, '0');
               }
             
@@ -177,13 +176,15 @@ for(let i = 0; i < links.length; i++){
                             cell.firstChild.style.backgroundImage = "url('../JS/img/transparent.jpg')";
                         }
                         else {
-                            let choise = document.getElementById("choise-table");
-                            let color = cell.firstChild.style.backgroundColor;
-                            choise.rows[0].cells[0].firstChild.style.backgroundColor = color;
-                            let darker = '#' + LightenDarkenColor(color.replace('#', ''), 2);
-                            let lighter = '#' + LightenDarkenColor(color.replace('#', ''), -5);
-                            choise.rows[1].cells[0].firstChild.style.backgroundColor = darker;
-                            choise.rows[1].cells[1].firstChild.style.backgroundColor = lighter;
+                            if (cell.firstChild.style.backgroundColor != '') {
+                                let choise = document.getElementById("choise-table");
+                                let color = cell.firstChild.style.backgroundColor;
+                                choise.rows[0].cells[0].firstChild.style.backgroundColor = color;
+                                let darker = '#' + LightenDarkenColor(color.replace('#', ''), 2);
+                                let lighter = '#' + LightenDarkenColor(color.replace('#', ''), -5);
+                                choise.rows[1].cells[0].firstChild.style.backgroundColor = darker;
+                                choise.rows[1].cells[1].firstChild.style.backgroundColor = lighter;
+                            }
                         }
                     }
                 }
