@@ -1,5 +1,5 @@
 import {DbEmulator} from './dbEmulator.js';
-import {Slide} from './slide,js';
+import {Slide} from './slide.js';
 import {SlideManager} from './slideManager.js';
 import {Navigator} from './navigator.js';
 
