@@ -173,7 +173,7 @@ for(let i = 0; i < links.length; i++){
                 {
                     cell.firstChild.onclick = () => {
                         if (removing) {
-                            cell.firstChild.style.backgroundColor = "none";
+                            cell.firstChild.style.backgroundColor = "";
                             cell.firstChild.style.backgroundImage = "url('../JS/img/transparent.jpg')";
                         }
                         else {
