@@ -6,12 +6,13 @@ String.prototype.hashCode = function() {
     for (var i = 0; i < this.length; i++) {
         var char = this.charCodeAt(i);
         hash = ((hash<<5)-hash)+char;
-        hash = hash & hash; // Convert to 32bit integer
+        hash = hash & hash;
     }
     return hash;
 }
 
-export class DbEmulator {
+export 
+class DbEmulator {
     constructor() {
         this.appName = 'Chromatica';
 
@@ -38,7 +39,13 @@ export class DbEmulator {
                 passwordHash: password.hashCode(),
                 palettes: null,
             };
-            this.save();
+            this.save().then(
+                result => {
+                    alert(result);
+                    console.log(result);
+                },
+                error => alert(error)
+            );
         }
         else {
             throw new Error(`User \'${userName}\' already exists!`);
@@ -49,6 +56,14 @@ export class DbEmulator {
         console.log(this.tree);
         try {
             if (this.tree[userName].passwordHash === password.hashCode()) {
+                this.tree.currentUser = userName;
+                this.save().then(
+                    result => {
+                        alert(result);
+                        console.log(result);
+                    },
+                    error => alert(error)
+                );
                 return true;
             }
             else {
@@ -62,14 +77,10 @@ export class DbEmulator {
     }
 
     save() {
-        localStorage.setItem(this.appName, JSON.stringify(this.tree));
-    }
-
-    savePalette(palette) {
-        this.tree.currentUser.palettes[palette.title] = palette.colors;
+        let that = this;
         return new Promise(function(resolve, reject) {
             try {
-                localStorage.setItem(this.appName, JSON.stringify(this.tree));
+                localStorage.setItem(that.appName, JSON.stringify(that.tree));
                 resolve('Saving achieved success.');
             }
             catch (e) {
@@ -78,38 +89,45 @@ export class DbEmulator {
             }
 
         });
-        savePromise.then(
-            result => {
-                alert(result);
-                console.log(result);
-            },
-            error => alert(error)
-        );
     }
-}
-/*
-export function registerButtonHandler() {
-    const signUpLogin = document.getElementById('sign-up-login');
-    const signUpPassword = document.getElementById('sign-up-password');
-    const signUpConfirm = document.getElementById('sign-up-confirm');
-    let db = new DbEmulator();
-    if (signUpPassword.value === signUpConfirm.value) {
-        
-        db.registerUser(signUpLogin.value, signUpPassword.value);
-    }
-    console.log(db.tree);
-}
 
-export function authButtonHandler() {
-    const signInLogin = document.getElementById('sign-in-login');
-    const signInPassword = document.getElementById('sign-in-password');
-    const signInConfirm = document.getElementById('sign-in-confirm');
-    let db = new DbEmulator();
-    if (db.authenticateUser(signInLogin.value, signInPassword.value)) {
-        
-            document.getElementById('join-link').innerHTML = signInLogin;
+    getPaletteList() {
+        if (this.tree.currentUser != null) {
+            let list = [];
+            for (var key in this.tree[this.tree.currentUser].palettes) {
+                list.push(key);
+            }
+            console.log(list);
+            return list;
+        }
     }
-    console.log(db.tree);
-}
 
-*/
+    
+    getPalette(paletteTitle) {
+        if (this.tree.currentUser != null) {
+            return this.tree[this.tree.currentUser].palettes[paletteTitle];
+        }
+    }
+
+    savePalette(palette) {
+        if (this.tree.currentUser != null) {
+            if (this.tree[this.tree.currentUser].palettes == null) {
+                this.tree[this.tree.currentUser].palettes = {};
+            }
+            this.tree[this.tree.currentUser].palettes[palette.title] = palette;
+            
+            this.save().then(
+                result => {
+                    alert(result);
+                    console.log(result);
+                },
+                error => alert(error)
+            );
+        }  
+    }
+
+    logout() {
+        this.tree.currentUser = null;
+        this.save();
+    }
+}

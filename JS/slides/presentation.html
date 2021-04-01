@@ -1,25 +1,26 @@
 <main>
+    <template id="tmpl">
+        <slot name="image"></slot>
+        <slot name="text"></slot>
+    </template>
     <ul class="presentation-list">
         <li>
-
-            <section class="presentation-container">
-                <figure class="presentation-figure">
+            <presentation-section class="presentation-container">
+                <figure slot="image" class="presentation-figure">
                     <img src="../JS/img/presentation1.jpg" alt="1st presentation image"/>
                     <figcaption>Nature has created truly aborable colors...</figcaption>
                 </figure>
-                <article class="presentation-article">
-                    <h2>Learn coloristics</h2>
-                    <p>
+                <article slot="text" class="presentation-article">
+                    <h2 slot="title">Learn coloristics</h2>
+                    <p slot="text">
                         <mark><q>Chromatica</q></mark> is a tool created for any kind of artist which has to work with coloris.
                     Have you ever felt embarrasing confusion while trying to match colors on palette with ones in your imagination?
                     We shall help you to create palette which could satisfy any artist's needs of yours.
                     </p>
                 </article>
-            </section>
-            
+            </presentation-section>
         </li>
         <li>
-            
             <hr class="hr-shadow">
             <section class="presentation-container">
                 <article class="presentation-article">
@@ -38,19 +39,19 @@
         </li>
         <li>
             <hr class="hr-shadow">
-            <section class="presentation-container">
-                <figure class="presentation-figure">
-                    <img src="../JS/img/presentation3.jpg" alt="3rd presentation image" width="600" height="600"/>
+            <presentation-section class="presentation-container">
+                <figure slot="image" class="presentation-figure">
+                    <img src="../JS/img/presentation3.jpg" alt="3rd presentation image"/>
                     <figcaption>...and recreate them in digital art!</figcaption>
                 </figure>
-                <article class="presentation-article">
-                    <h2>Create palette</h2>
-                    <p>
+                <article slot="text" class="presentation-article">
+                    <h2 slot="title">Create palette</h2>
+                    <p slot="text">
                         You mau browse the website either to get inspired or create unique palette for your potential masterpiece.
                     Feel free to dive into colorful ocean! 
                     </p>
                 </article>
-            </section>
+            </presentation-section>
         </li>
     </ul>
 </main>
